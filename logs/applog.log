@@ -1,0 +1,635 @@
+[INFO] 15-01-2025 10:14:30 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 10:14:30 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 10:14:30 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 10:14:31 [main] LogUtils - RESPONSE: 
+{
+    "token": "3112|VBJEsX3JFvj6Ws4ucPkZOK0Wtcme43MCsGRHimPIf9c994ed"
+}
+[INFO] 15-01-2025 10:14:32 [main] LogUtils - Token Global: 3112|VBJEsX3JFvj6Ws4ucPkZOK0Wtcme43MCsGRHimPIf9c994ed
+[INFO] 15-01-2025 10:14:32 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 10:14:32 [main] LogUtils - Đang chạy test case testAddNewCategory
+[INFO] 15-01-2025 10:14:32 [main] LogUtils - Test case testAddNewCategory is passed.
+[INFO] 15-01-2025 10:14:32 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 10:14:32 [main] LogUtils - Đang chạy test case testAddNewBook
+[ERROR] 15-01-2025 10:14:32 [main] LogUtils - Test case testAddNewBook is failed.
+[ERROR] 15-01-2025 10:14:32 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <422>.
+
+[INFO] 15-01-2025 10:14:32 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 10:14:32 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 10:14:32 [main] LogUtils - Tổng số test cases: 2
+[INFO] 15-01-2025 10:14:32 [main] LogUtils - Số test cases passed: 1
+[INFO] 15-01-2025 10:14:32 [main] LogUtils - Số test cases failed: 1
+[INFO] 15-01-2025 15:45:47 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 15:45:47 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 15:45:47 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 15:47:54 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 15:47:54 [main] LogUtils - Đang chạy test case testAddNewCategory
+[WARN] 15-01-2025 15:47:54 [main] LogUtils - Test case testAddNewCategory is skipped.
+[INFO] 15-01-2025 15:47:54 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 15:47:54 [main] LogUtils - Đang chạy test case getCategoryById
+[WARN] 15-01-2025 15:47:54 [main] LogUtils - Test case getCategoryById is skipped.
+[INFO] 15-01-2025 15:47:54 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 15:47:54 [main] LogUtils - Đang chạy test case testUpdateCategory
+[WARN] 15-01-2025 15:47:54 [main] LogUtils - Test case testUpdateCategory is skipped.
+[INFO] 15-01-2025 15:47:54 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 15:47:54 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 15:47:54 [main] LogUtils - Tổng số test cases: 3
+[INFO] 15-01-2025 15:47:54 [main] LogUtils - Số test cases passed: 0
+[INFO] 15-01-2025 15:47:54 [main] LogUtils - Số test cases failed: 0
+[INFO] 15-01-2025 15:58:17 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 15:58:18 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 15:58:18 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 15:58:20 [main] LogUtils - RESPONSE: 
+{
+    "token": "3145|DEEoNP0Xf4CezzDPAqpoysw4BRFqL7lxcBwRFCf5e1845a8a"
+}
+[INFO] 15-01-2025 15:58:20 [main] LogUtils - Token Global: 3145|DEEoNP0Xf4CezzDPAqpoysw4BRFqL7lxcBwRFCf5e1845a8a
+[INFO] 15-01-2025 15:58:20 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 15:58:20 [main] LogUtils - Đang chạy test case testAddNewCategory
+[ERROR] 15-01-2025 15:58:20 [main] LogUtils - Test case testAddNewCategory is failed.
+[ERROR] 15-01-2025 15:58:20 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <422>.
+
+[INFO] 15-01-2025 15:58:20 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 15:58:20 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 15:58:20 [main] LogUtils - Tổng số test cases: 1
+[INFO] 15-01-2025 15:58:20 [main] LogUtils - Số test cases passed: 0
+[INFO] 15-01-2025 15:58:20 [main] LogUtils - Số test cases failed: 1
+[INFO] 15-01-2025 16:46:57 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 16:46:57 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 16:46:57 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 16:46:59 [main] LogUtils - RESPONSE: 
+{
+    "token": "3147|w1AoxsDA6ghjriFEEM6Qlc0i4rpAlINfopDjj5PZ113c74a1"
+}
+[INFO] 15-01-2025 16:46:59 [main] LogUtils - Token Global: 3147|w1AoxsDA6ghjriFEEM6Qlc0i4rpAlINfopDjj5PZ113c74a1
+[INFO] 15-01-2025 16:46:59 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 16:46:59 [main] LogUtils - Đang chạy test case testAddNewCategory
+[ERROR] 15-01-2025 16:46:59 [main] LogUtils - Test case testAddNewCategory is failed.
+[ERROR] 15-01-2025 16:46:59 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <422>.
+
+[INFO] 15-01-2025 16:46:59 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 16:46:59 [main] LogUtils - Đang chạy test case getCategoryById
+[ERROR] 15-01-2025 16:47:00 [main] LogUtils - Test case getCategoryById is failed.
+[ERROR] 15-01-2025 16:47:00 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 16:47:00 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 16:47:00 [main] LogUtils - Đang chạy test case testUpdateCategory
+[ERROR] 15-01-2025 16:47:00 [main] LogUtils - Test case testUpdateCategory is failed.
+[ERROR] 15-01-2025 16:47:00 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 16:47:00 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 16:47:00 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 16:47:00 [main] LogUtils - Tổng số test cases: 3
+[INFO] 15-01-2025 16:47:00 [main] LogUtils - Số test cases passed: 0
+[INFO] 15-01-2025 16:47:00 [main] LogUtils - Số test cases failed: 3
+[INFO] 15-01-2025 16:48:20 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 16:48:20 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 16:48:20 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 16:48:21 [main] LogUtils - RESPONSE: 
+{
+    "token": "3148|Y21hdkMrVCRzDHVU0mAXpENiLp5t1GQcDxrOEnv6a1d80da9"
+}
+[INFO] 15-01-2025 16:48:22 [main] LogUtils - Token Global: 3148|Y21hdkMrVCRzDHVU0mAXpENiLp5t1GQcDxrOEnv6a1d80da9
+[INFO] 15-01-2025 16:48:22 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 16:48:22 [main] LogUtils - Đang chạy test case testAddNewCategory
+[ERROR] 15-01-2025 16:48:22 [main] LogUtils - Test case testAddNewCategory is failed.
+[ERROR] 15-01-2025 16:48:22 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <422>.
+
+[INFO] 15-01-2025 16:48:22 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 16:48:22 [main] LogUtils - Đang chạy test case getCategoryById
+[ERROR] 15-01-2025 16:48:22 [main] LogUtils - Test case getCategoryById is failed.
+[ERROR] 15-01-2025 16:48:22 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 16:48:22 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 16:48:22 [main] LogUtils - Đang chạy test case testUpdateCategory
+[ERROR] 15-01-2025 16:48:23 [main] LogUtils - Test case testUpdateCategory is failed.
+[ERROR] 15-01-2025 16:48:23 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 16:48:23 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 16:48:23 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 16:48:23 [main] LogUtils - Tổng số test cases: 3
+[INFO] 15-01-2025 16:48:23 [main] LogUtils - Số test cases passed: 0
+[INFO] 15-01-2025 16:48:23 [main] LogUtils - Số test cases failed: 3
+[INFO] 15-01-2025 16:51:29 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 16:51:30 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 16:51:30 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 16:51:31 [main] LogUtils - RESPONSE: 
+{
+    "token": "3149|HmTfNTkpItOVQDU7ZTxye2MNQF8aZbycuxelNI4kce76f0c7"
+}
+[INFO] 15-01-2025 16:51:31 [main] LogUtils - Token Global: 3149|HmTfNTkpItOVQDU7ZTxye2MNQF8aZbycuxelNI4kce76f0c7
+[INFO] 15-01-2025 16:51:31 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 16:51:31 [main] LogUtils - Đang chạy test case testAddNewCategory
+[ERROR] 15-01-2025 16:51:31 [main] LogUtils - Test case testAddNewCategory is failed.
+[ERROR] 15-01-2025 16:51:31 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <422>.
+
+[INFO] 15-01-2025 16:51:31 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 16:51:31 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 16:51:31 [main] LogUtils - Tổng số test cases: 1
+[INFO] 15-01-2025 16:51:31 [main] LogUtils - Số test cases passed: 0
+[INFO] 15-01-2025 16:51:31 [main] LogUtils - Số test cases failed: 1
+[INFO] 15-01-2025 16:54:47 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 16:54:47 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 16:54:47 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 16:54:49 [main] LogUtils - RESPONSE: 
+{
+    "token": "3150|Xw2du8FyBsgQTutz4BHEd6D3v3FXApjfLbO7eblD8e7ee48d"
+}
+[INFO] 15-01-2025 16:54:49 [main] LogUtils - Token Global: 3150|Xw2du8FyBsgQTutz4BHEd6D3v3FXApjfLbO7eblD8e7ee48d
+[INFO] 15-01-2025 16:54:49 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 16:54:49 [main] LogUtils - Đang chạy test case testAddNewCategory
+[ERROR] 15-01-2025 16:54:50 [main] LogUtils - Test case testAddNewCategory is failed.
+[ERROR] 15-01-2025 16:54:50 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <422>.
+
+[INFO] 15-01-2025 16:54:50 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 16:54:50 [main] LogUtils - Đang chạy test case getCategoryById
+[ERROR] 15-01-2025 16:54:50 [main] LogUtils - Test case getCategoryById is failed.
+[ERROR] 15-01-2025 16:54:50 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 16:54:50 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 16:54:50 [main] LogUtils - Đang chạy test case testUpdateCategory
+[ERROR] 15-01-2025 16:54:50 [main] LogUtils - Test case testUpdateCategory is failed.
+[ERROR] 15-01-2025 16:54:50 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 16:54:50 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 16:54:50 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 16:54:50 [main] LogUtils - Tổng số test cases: 3
+[INFO] 15-01-2025 16:54:50 [main] LogUtils - Số test cases passed: 0
+[INFO] 15-01-2025 16:54:50 [main] LogUtils - Số test cases failed: 3
+[INFO] 15-01-2025 17:04:42 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 17:04:42 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 17:04:42 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 17:04:43 [main] LogUtils - RESPONSE: 
+{
+    "token": "3151|h7DjvpnVNuwM9IykOBCkiwomxFj0rjesRkd7ZzhZ3a6d35be"
+}
+[INFO] 15-01-2025 17:04:44 [main] LogUtils - Token Global: 3151|h7DjvpnVNuwM9IykOBCkiwomxFj0rjesRkd7ZzhZ3a6d35be
+[INFO] 15-01-2025 17:04:44 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:04:44 [main] LogUtils - Đang chạy test case testAddNewCategory
+[ERROR] 15-01-2025 17:04:44 [main] LogUtils - Test case testAddNewCategory is failed.
+[ERROR] 15-01-2025 17:04:44 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <422>.
+
+[INFO] 15-01-2025 17:04:44 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:04:44 [main] LogUtils - Đang chạy test case getCategoryById
+[ERROR] 15-01-2025 17:04:45 [main] LogUtils - Test case getCategoryById is failed.
+[ERROR] 15-01-2025 17:04:45 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:04:45 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:04:45 [main] LogUtils - Đang chạy test case testUpdateCategory
+[ERROR] 15-01-2025 17:04:45 [main] LogUtils - Test case testUpdateCategory is failed.
+[ERROR] 15-01-2025 17:04:45 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:04:45 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 17:04:45 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 17:04:45 [main] LogUtils - Tổng số test cases: 3
+[INFO] 15-01-2025 17:04:45 [main] LogUtils - Số test cases passed: 0
+[INFO] 15-01-2025 17:04:45 [main] LogUtils - Số test cases failed: 3
+[INFO] 15-01-2025 17:10:02 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 17:10:02 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 17:10:02 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 17:10:03 [main] LogUtils - RESPONSE: 
+{
+    "token": "3152|9uPr2GKac1WZkdD3Red6XnqPo2qd5JndpE1SOooOd61801fe"
+}
+[INFO] 15-01-2025 17:10:03 [main] LogUtils - Token Global: 3152|9uPr2GKac1WZkdD3Red6XnqPo2qd5JndpE1SOooOd61801fe
+[INFO] 15-01-2025 17:10:03 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:10:03 [main] LogUtils - Đang chạy test case testAddNewCategory
+[ERROR] 15-01-2025 17:10:04 [main] LogUtils - Test case testAddNewCategory is failed.
+[ERROR] 15-01-2025 17:10:04 [main] LogUtils - java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "io.restassured.path.json.JsonPath.getList(String)" is null
+[INFO] 15-01-2025 17:10:04 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:10:04 [main] LogUtils - Đang chạy test case getCategoryById
+[ERROR] 15-01-2025 17:10:04 [main] LogUtils - Test case getCategoryById is failed.
+[ERROR] 15-01-2025 17:10:04 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:10:04 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:10:04 [main] LogUtils - Đang chạy test case testUpdateCategory
+[ERROR] 15-01-2025 17:10:04 [main] LogUtils - Test case testUpdateCategory is failed.
+[ERROR] 15-01-2025 17:10:04 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:10:04 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 17:10:04 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 17:10:04 [main] LogUtils - Tổng số test cases: 3
+[INFO] 15-01-2025 17:10:04 [main] LogUtils - Số test cases passed: 0
+[INFO] 15-01-2025 17:10:04 [main] LogUtils - Số test cases failed: 3
+[INFO] 15-01-2025 17:12:07 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 17:12:07 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 17:12:07 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 17:12:09 [main] LogUtils - RESPONSE: 
+{
+    "token": "3153|BmA6HU5bVl0Nj2Qlc8kakr7oz1xFaqmCTAUrCU7w1c165a9f"
+}
+[INFO] 15-01-2025 17:12:09 [main] LogUtils - Token Global: 3153|BmA6HU5bVl0Nj2Qlc8kakr7oz1xFaqmCTAUrCU7w1c165a9f
+[INFO] 15-01-2025 17:12:09 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:12:09 [main] LogUtils - Đang chạy test case testAddNewCategory
+[ERROR] 15-01-2025 17:12:10 [main] LogUtils - Test case testAddNewCategory is failed.
+[ERROR] 15-01-2025 17:12:10 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <422>.
+
+[INFO] 15-01-2025 17:12:10 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:12:10 [main] LogUtils - Đang chạy test case getCategoryById
+[ERROR] 15-01-2025 17:12:10 [main] LogUtils - Test case getCategoryById is failed.
+[ERROR] 15-01-2025 17:12:10 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:12:10 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:12:10 [main] LogUtils - Đang chạy test case testUpdateCategory
+[ERROR] 15-01-2025 17:12:11 [main] LogUtils - Test case testUpdateCategory is failed.
+[ERROR] 15-01-2025 17:12:11 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:12:11 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 17:12:11 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 17:12:11 [main] LogUtils - Tổng số test cases: 3
+[INFO] 15-01-2025 17:12:11 [main] LogUtils - Số test cases passed: 0
+[INFO] 15-01-2025 17:12:11 [main] LogUtils - Số test cases failed: 3
+[INFO] 15-01-2025 17:14:34 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 17:14:34 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 17:14:34 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 17:14:35 [main] LogUtils - RESPONSE: 
+{
+    "token": "3154|BHSA9ktP6uuiRPTiHGhHAw0NVUUznh9gT8qweU7Ec3fa4601"
+}
+[INFO] 15-01-2025 17:14:35 [main] LogUtils - Token Global: 3154|BHSA9ktP6uuiRPTiHGhHAw0NVUUznh9gT8qweU7Ec3fa4601
+[INFO] 15-01-2025 17:14:35 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:14:35 [main] LogUtils - Đang chạy test case testAddNewCategory
+[ERROR] 15-01-2025 17:14:36 [main] LogUtils - Test case testAddNewCategory is failed.
+[ERROR] 15-01-2025 17:14:36 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <422>.
+
+[INFO] 15-01-2025 17:14:36 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:14:36 [main] LogUtils - Đang chạy test case getCategoryById
+[ERROR] 15-01-2025 17:14:36 [main] LogUtils - Test case getCategoryById is failed.
+[ERROR] 15-01-2025 17:14:36 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:14:36 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:14:36 [main] LogUtils - Đang chạy test case testUpdateCategory
+[ERROR] 15-01-2025 17:14:36 [main] LogUtils - Test case testUpdateCategory is failed.
+[ERROR] 15-01-2025 17:14:36 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:14:36 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 17:14:36 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 17:14:36 [main] LogUtils - Tổng số test cases: 3
+[INFO] 15-01-2025 17:14:36 [main] LogUtils - Số test cases passed: 0
+[INFO] 15-01-2025 17:14:36 [main] LogUtils - Số test cases failed: 3
+[INFO] 15-01-2025 17:18:14 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 17:18:14 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 17:18:14 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 17:18:16 [main] LogUtils - RESPONSE: 
+{
+    "token": "3155|BCvOEXTBiNfZDOiX5CUCiI84c2vgr5qz79ZABJwc41d8cf51"
+}
+[INFO] 15-01-2025 17:18:16 [main] LogUtils - Token Global: 3155|BCvOEXTBiNfZDOiX5CUCiI84c2vgr5qz79ZABJwc41d8cf51
+[INFO] 15-01-2025 17:18:16 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:18:16 [main] LogUtils - Đang chạy test case testAddNewCategory
+[ERROR] 15-01-2025 17:18:16 [main] LogUtils - Test case testAddNewCategory is failed.
+[ERROR] 15-01-2025 17:18:16 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <422>.
+
+[INFO] 15-01-2025 17:18:16 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:18:16 [main] LogUtils - Đang chạy test case getCategoryById
+[ERROR] 15-01-2025 17:18:17 [main] LogUtils - Test case getCategoryById is failed.
+[ERROR] 15-01-2025 17:18:17 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:18:17 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:18:17 [main] LogUtils - Đang chạy test case testUpdateCategory
+[ERROR] 15-01-2025 17:18:17 [main] LogUtils - Test case testUpdateCategory is failed.
+[ERROR] 15-01-2025 17:18:17 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:18:17 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 17:18:17 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 17:18:17 [main] LogUtils - Tổng số test cases: 3
+[INFO] 15-01-2025 17:18:17 [main] LogUtils - Số test cases passed: 0
+[INFO] 15-01-2025 17:18:17 [main] LogUtils - Số test cases failed: 3
+[INFO] 15-01-2025 17:19:04 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 17:19:04 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 17:19:04 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 17:19:06 [main] LogUtils - RESPONSE: 
+{
+    "token": "3156|RxUbQy8CAnK2zUwLjHdjwrNJserthfH8PBVp1ywob6a36d0b"
+}
+[INFO] 15-01-2025 17:19:06 [main] LogUtils - Token Global: 3156|RxUbQy8CAnK2zUwLjHdjwrNJserthfH8PBVp1ywob6a36d0b
+[INFO] 15-01-2025 17:19:06 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:19:06 [main] LogUtils - Đang chạy test case testAddNewCategory
+[ERROR] 15-01-2025 17:19:06 [main] LogUtils - Test case testAddNewCategory is failed.
+[ERROR] 15-01-2025 17:19:06 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <404>.
+
+[INFO] 15-01-2025 17:19:06 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:19:06 [main] LogUtils - Đang chạy test case getCategoryById
+[ERROR] 15-01-2025 17:19:07 [main] LogUtils - Test case getCategoryById is failed.
+[ERROR] 15-01-2025 17:19:07 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:19:07 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:19:07 [main] LogUtils - Đang chạy test case testUpdateCategory
+[ERROR] 15-01-2025 17:19:07 [main] LogUtils - Test case testUpdateCategory is failed.
+[ERROR] 15-01-2025 17:19:07 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:19:07 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 17:19:07 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 17:19:07 [main] LogUtils - Tổng số test cases: 3
+[INFO] 15-01-2025 17:19:07 [main] LogUtils - Số test cases passed: 0
+[INFO] 15-01-2025 17:19:07 [main] LogUtils - Số test cases failed: 3
+[INFO] 15-01-2025 17:19:31 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 17:19:31 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 17:19:31 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 17:19:32 [main] LogUtils - RESPONSE: 
+{
+    "token": "3157|sqxaa5pJg08mSlA4VoASOkVG4VFMILUATJSfP6BW6ca3b8e1"
+}
+[INFO] 15-01-2025 17:19:32 [main] LogUtils - Token Global: 3157|sqxaa5pJg08mSlA4VoASOkVG4VFMILUATJSfP6BW6ca3b8e1
+[INFO] 15-01-2025 17:19:32 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:19:32 [main] LogUtils - Đang chạy test case testAddNewCategory
+[ERROR] 15-01-2025 17:19:33 [main] LogUtils - Test case testAddNewCategory is failed.
+[ERROR] 15-01-2025 17:19:33 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <422>.
+
+[INFO] 15-01-2025 17:19:33 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:19:33 [main] LogUtils - Đang chạy test case getCategoryById
+[ERROR] 15-01-2025 17:19:33 [main] LogUtils - Test case getCategoryById is failed.
+[ERROR] 15-01-2025 17:19:33 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:19:33 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:19:33 [main] LogUtils - Đang chạy test case testUpdateCategory
+[ERROR] 15-01-2025 17:19:33 [main] LogUtils - Test case testUpdateCategory is failed.
+[ERROR] 15-01-2025 17:19:33 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:19:33 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 17:19:33 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 17:19:33 [main] LogUtils - Tổng số test cases: 3
+[INFO] 15-01-2025 17:19:33 [main] LogUtils - Số test cases passed: 0
+[INFO] 15-01-2025 17:19:33 [main] LogUtils - Số test cases failed: 3
+[INFO] 15-01-2025 17:23:36 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 17:23:36 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 17:23:36 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 17:23:38 [main] LogUtils - RESPONSE: 
+{
+    "token": "3158|6Z5Tg6S28dDIz3uKiKwMLO8OwVPpMtF8oaur9KPC438a7f59"
+}
+[INFO] 15-01-2025 17:23:38 [main] LogUtils - Token Global: 3158|6Z5Tg6S28dDIz3uKiKwMLO8OwVPpMtF8oaur9KPC438a7f59
+[INFO] 15-01-2025 17:23:38 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:23:38 [main] LogUtils - Đang chạy test case testAddNewCategory
+[ERROR] 15-01-2025 17:23:39 [main] LogUtils - Test case testAddNewCategory is failed.
+[ERROR] 15-01-2025 17:23:39 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <422>.
+
+[INFO] 15-01-2025 17:23:39 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:23:39 [main] LogUtils - Đang chạy test case getCategoryById
+[ERROR] 15-01-2025 17:23:39 [main] LogUtils - Test case getCategoryById is failed.
+[ERROR] 15-01-2025 17:23:39 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:23:39 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:23:39 [main] LogUtils - Đang chạy test case testUpdateCategory
+[ERROR] 15-01-2025 17:23:40 [main] LogUtils - Test case testUpdateCategory is failed.
+[ERROR] 15-01-2025 17:23:40 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:23:40 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 17:23:40 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 17:23:40 [main] LogUtils - Tổng số test cases: 3
+[INFO] 15-01-2025 17:23:40 [main] LogUtils - Số test cases passed: 0
+[INFO] 15-01-2025 17:23:40 [main] LogUtils - Số test cases failed: 3
+[INFO] 15-01-2025 17:27:43 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 17:27:43 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 17:27:43 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 17:27:44 [main] LogUtils - RESPONSE: 
+{
+    "token": "3159|mY1IUBtrjlaaRsNO3lVThXu8YcMbOJcbaPxeINFj028fdd3a"
+}
+[INFO] 15-01-2025 17:27:44 [main] LogUtils - Token Global: 3159|mY1IUBtrjlaaRsNO3lVThXu8YcMbOJcbaPxeINFj028fdd3a
+[INFO] 15-01-2025 17:27:44 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:27:44 [main] LogUtils - Đang chạy test case testAddNewCategory
+[ERROR] 15-01-2025 17:27:45 [main] LogUtils - Test case testAddNewCategory is failed.
+[ERROR] 15-01-2025 17:27:45 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <422>.
+
+[INFO] 15-01-2025 17:27:45 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:27:45 [main] LogUtils - Đang chạy test case getCategoryById
+[ERROR] 15-01-2025 17:27:45 [main] LogUtils - Test case getCategoryById is failed.
+[ERROR] 15-01-2025 17:27:45 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:27:45 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:27:45 [main] LogUtils - Đang chạy test case testUpdateCategory
+[ERROR] 15-01-2025 17:27:46 [main] LogUtils - Test case testUpdateCategory is failed.
+[ERROR] 15-01-2025 17:27:46 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+[INFO] 15-01-2025 17:27:46 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 17:27:46 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 17:27:46 [main] LogUtils - Tổng số test cases: 3
+[INFO] 15-01-2025 17:27:46 [main] LogUtils - Số test cases passed: 0
+[INFO] 15-01-2025 17:27:46 [main] LogUtils - Số test cases failed: 3
+[INFO] 15-01-2025 17:30:58 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 17:30:58 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 17:30:58 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 17:30:59 [main] LogUtils - RESPONSE: 
+{
+    "token": "3160|5jMBxfQh8DQyCSUb81Q3xWO1POfgSkz7eevu74mfcef2bd9d"
+}
+[INFO] 15-01-2025 17:31:00 [main] LogUtils - Token Global: 3160|5jMBxfQh8DQyCSUb81Q3xWO1POfgSkz7eevu74mfcef2bd9d
+[INFO] 15-01-2025 17:31:00 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:31:00 [main] LogUtils - Đang chạy test case testAddNewCategory
+[INFO] 15-01-2025 17:31:00 [main] LogUtils - Test case testAddNewCategory is passed.
+[INFO] 15-01-2025 17:31:00 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 17:31:00 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 17:31:00 [main] LogUtils - Tổng số test cases: 1
+[INFO] 15-01-2025 17:31:00 [main] LogUtils - Số test cases passed: 1
+[INFO] 15-01-2025 17:31:00 [main] LogUtils - Số test cases failed: 0
+[INFO] 15-01-2025 17:31:22 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 15-01-2025 17:31:22 [main] LogUtils - POST not authorization: /login
+[INFO] 15-01-2025 17:31:22 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 15-01-2025 17:31:24 [main] LogUtils - RESPONSE: 
+{
+    "token": "3161|QSE0lUWReMcVDmSOKNeV8iWO0HpWkJCu7swa4OPD69fbd655"
+}
+[INFO] 15-01-2025 17:31:24 [main] LogUtils - Token Global: 3161|QSE0lUWReMcVDmSOKNeV8iWO0HpWkJCu7swa4OPD69fbd655
+[INFO] 15-01-2025 17:31:24 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:31:24 [main] LogUtils - Đang chạy test case testAddNewCategory
+[INFO] 15-01-2025 17:31:24 [main] LogUtils - Test case testAddNewCategory is passed.
+[INFO] 15-01-2025 17:31:24 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:31:24 [main] LogUtils - Đang chạy test case getCategoryById
+[INFO] 15-01-2025 17:31:25 [main] LogUtils - Test case getCategoryById is passed.
+[INFO] 15-01-2025 17:31:25 [main] LogUtils - 
+*****************************************************************
+[INFO] 15-01-2025 17:31:25 [main] LogUtils - Đang chạy test case testUpdateCategory
+[ERROR] 15-01-2025 17:31:25 [main] LogUtils - Test case testUpdateCategory is failed.
+[ERROR] 15-01-2025 17:31:25 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+[INFO] 15-01-2025 17:31:25 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 15-01-2025 17:31:25 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 15-01-2025 17:31:25 [main] LogUtils - Tổng số test cases: 3
+[INFO] 15-01-2025 17:31:25 [main] LogUtils - Số test cases passed: 2
+[INFO] 15-01-2025 17:31:25 [main] LogUtils - Số test cases failed: 1
+[INFO] 18-01-2025 13:49:27 [main] LogUtils - 
+===============================================================
+==================== DEFAULT SUITE STARTING ===================
+===============================================================
+[INFO] 18-01-2025 13:49:27 [main] LogUtils - POST not authorization: /login
+[INFO] 18-01-2025 13:49:27 [main] LogUtils - Body: {"username":"anhtester","password":"Demo@123"}
+[INFO] 18-01-2025 13:49:28 [main] LogUtils - RESPONSE: 
+{
+    "token": "3280|wZuURqPadsWg9bpkdKl9AP3S70OMUs7hFiFUSZDM3da275db"
+}
+[INFO] 18-01-2025 13:49:29 [main] LogUtils - Token Global: 3280|wZuURqPadsWg9bpkdKl9AP3S70OMUs7hFiFUSZDM3da275db
+[INFO] 18-01-2025 13:49:29 [main] LogUtils - 
+*****************************************************************
+[INFO] 18-01-2025 13:49:29 [main] LogUtils - Đang chạy test case testAddNewCategory
+[INFO] 18-01-2025 13:49:29 [main] LogUtils - Test case testAddNewCategory is passed.
+[INFO] 18-01-2025 13:49:29 [main] LogUtils - 
+*****************************************************************
+[INFO] 18-01-2025 13:49:29 [main] LogUtils - Đang chạy test case testAddNewBook
+[ERROR] 18-01-2025 13:49:29 [main] LogUtils - Test case testAddNewBook is failed.
+[ERROR] 18-01-2025 13:49:29 [main] LogUtils - java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <422>.
+
+[INFO] 18-01-2025 13:49:29 [main] LogUtils - 
+################################# FINISH ################################
+[INFO] 18-01-2025 13:49:29 [main] LogUtils - Đã gửi mail đến admin@anhtester.com
+[INFO] 18-01-2025 13:49:29 [main] LogUtils - Tổng số test cases: 2
+[INFO] 18-01-2025 13:49:29 [main] LogUtils - Số test cases passed: 1
+[INFO] 18-01-2025 13:49:29 [main] LogUtils - Số test cases failed: 1

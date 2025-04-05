@@ -1,0 +1,471 @@
+syntax = "proto3";
+
+option java_package = "wallet";
+option java_outer_classname = "WalletProto";
+package wallet;
+
+service WalletService {
+    rpc Transfer (stream TransferRequest) returns (stream TransferResponse);
+    rpc Transfers (TransferRequests) returns (TransferResponses);
+    rpc GetWallet (WalletRequest) returns (WalletResponse);
+}
+
+message TransferRequest {
+    string partner_code = 1;
+    string partner_server_ip = 2;
+    int64 member_id = 3;
+    int64 user_id = 4;
+
+    string aff_id = 5;
+    string app_id = 6;
+
+    string fullname = 7;
+    string username = 8;
+    string user_type = 9;
+    string uid = 10;
+    string uuid = 11;
+    string transaction_id = 12;
+    string reference_id = 13;
+
+    int64 time = 14;
+    string hash = 15;
+
+    double amount = 16;
+    double amount_min = 17;
+    double amount_vnd = 18; // Converted amount in VND
+
+    int32 wallet_type = 19; // 0, 99 (default wallet)
+    string action = 20; // swsm BET, RESERVE, COMMIT, RELEASE, WIN, LOST, CANCEL ; wallet have +, -
+    string type = 21; // BET, RESERVE, COMMIT, RELEASE, WIN, LOST, CANCEL
+    string option = 22; // DEBIT = WITHDRAW, CREDIT = DEPOSIT
+
+    EnumCurrency currency = 23; // Default VND
+    double currency_rate = 24; // Conversion rate to VND
+
+    GameData data = 25; // Additional game-related data
+}
+
+// Message to represent the TransferResponse
+message TransferResponse {
+    double amount = 1;                    // The transaction amount
+    double amount_after = 2;              // The balance after the transaction
+    double amount_before = 3;             // The balance before the transaction
+    double req_amount = 4;                // The requested amount for the transaction
+    double dues_amount = 5;               // The dues amount
+    string username = 6;                  // The username of the account holder
+    string transaction_id = 7;            // The transaction ID
+    string agency_transaction_id = 8;     // The agency's transaction ID
+    APIStatus status = 9;                 // The status of the transaction
+    int32 error_code = 10;                // The error code
+    string message = 11;                  // A message describing the status or error
+    int64 time = 12;                      // Timestamp of the transaction
+}
+
+message TransferRequests {
+    repeated TransferRequest requests = 1;
+}
+
+message TransferResponses {
+    repeated TransferResponse responses = 1;
+}
+
+message ExtraInfo {
+    int32 game_no = 1;
+    int32 range = 2;
+    string game_bet_type = 3;
+}
+
+message Jackport {
+    string type = 1;
+    double value = 2;
+}
+
+// GameObj message definition
+message GameObj {
+    string game_round_id = 1;
+    string game_session_id = 2;
+    string game_ticket_id = 3;
+    string game_ticket_status = 4;
+    string game_your_bet = 5;
+    double game_stake = 6;
+    double game_winlost = 7;
+    double game_gain = 8;
+    double game_tax = 9;
+    double game_refund = 10;
+    double game_reserve = 11;
+    double turnover = 12;
+    double net_turnover = 13;
+    double amount_after = 14;
+    double game_bet_value = 15;
+    string game_table_id = 16;
+    bool is_add_on_game = 17;
+    int32 is_free_bet = 18;
+    string bonus_id = 19;
+    double bonus_amount = 20;
+    string bet_id = 21;
+    string bet_type = 22;
+    int32 freebet_source = 23;
+    string line_id = 24;
+    string purchase_bet_id = 25;
+    string master_event_id = 26;
+    int32 combo_bet_numers_lines = 27;
+    int64 event_id = 28;
+    int32 selection_id = 29;
+    string event_name = 30;
+    string event_date = 31;
+    string round_start_time = 32;
+    string round_end_time = 33;
+    string scorce = 34;
+    double gain = 35;
+    double odds = 36;
+    double decimal_odds = 37;
+    double odds_in_user_style = 38;
+    string odds_style_name = 39;
+    int32 is_live = 40;
+    int32 bet_type_id = 41;
+    string bet_type_name = 42;
+    string creation_date = 43;
+    string result_date = 44;
+    int32 ball_number = 45;
+    int32 last_ball_no = 46;
+    int32 first_ball_no = 47;
+    int32 second_ball_no = 48;
+    int32 third_ball_no = 49;
+    int32 game_state = 50;
+    string custom_field = 51;
+    int32 homeId = 52;
+    int32 awayId = 53;
+    int32 currency = 54;
+    string kickOffTime = 55;
+    string betTime = 56;
+    int32 sport_type_id = 57;
+    string sport_type_name = 58;
+    int32 odds_type = 59;
+    int32 oddsId = 60;
+    string update_time = 61;
+    string winlost_date = 62;
+    string tsId = 63;
+}
+
+// GameLine message definition (inherits fields from GameObj)
+message GameLine {
+    string game_round_id = 1;
+    string game_session_id = 2;
+    string game_ticket_id = 3;
+    string game_ticket_status = 4;
+    string game_your_bet = 5;
+    double game_stake = 6;
+    double game_winlost = 7;
+    double game_gain = 8;
+    double game_tax = 9;
+    double game_refund = 10;
+    double game_reserve = 11;
+    double turnover = 12;
+    double net_turnover = 13;
+    double amount_after = 14;
+    double game_bet_value = 15;
+    string game_table_id = 16;
+    bool is_add_on_game = 17;
+    int32 is_free_bet = 18;
+    string bonus_id = 19;
+    double bonus_amount = 20;
+    string bet_id = 21;
+    string bet_type = 22;
+    int32 freebet_source = 23;
+    string line_id = 24;
+    string purchase_bet_id = 25;
+    string master_event_id = 26;
+    int32 combo_bet_numers_lines = 27;
+    int64 event_id = 28;
+    int32 selection_id = 29;
+    string event_name = 30;
+    string event_date = 31;
+    string round_start_time = 32;
+    string round_end_time = 33;
+    string scorce = 34;
+    double gain = 35;
+    double odds = 36;
+    double decimal_odds = 37;
+    double odds_in_user_style = 38;
+    string odds_style_name = 39;
+    int32 is_live = 40;
+    int32 bet_type_id = 41;
+    string bet_type_name = 42;
+    string creation_date = 43;
+    string result_date = 44;
+    int32 ball_number = 45;
+    int32 last_ball_no = 46;
+    int32 first_ball_no = 47;
+    int32 second_ball_no = 48;
+    int32 third_ball_no = 49;
+    int32 game_state = 50;
+    string custom_field = 51;
+    int32 homeId = 52;
+    int32 awayId = 53;
+    int32 currency = 54;
+    string kickOffTime = 55;
+    string betTime = 56;
+    int32 sport_type_id = 57;
+    string sport_type_name = 58;
+    int32 odds_type = 59;
+    int32 oddsId = 60;
+    string update_time = 61;
+    string winlost_date = 62;
+    string tsId = 63;
+}
+
+// GameData message definition (inherits fields from GameObj and adds its own fields)
+message GameData {
+    string game_id = 1;
+    string game_name = 2;
+    string game_prefix = 3;
+    repeated GameLine lines = 4;
+    string fg_id = 5;
+    string ip_play = 6;
+    string ip = 7;
+    string os = 8;
+    string device = 9;
+    string browser = 10;
+    int32 wallet_type = 11;
+    int32 platform_id = 12;
+    string game_ticket_id = 13;
+
+}
+
+enum ReserveOptionEnum {
+    RESERVE_OPTION_UNSPECIFIED = 0; // Default value
+    DUES = 1;
+    IGNORE = 2;
+}
+
+// Message to list all reserve options
+message ReserveOption {
+    repeated ReserveOptionEnum options = 1;
+}
+
+enum APIStatus {
+    DEFAULT = 0;
+    OK = 200;               // Successful operation
+    INVALID = 400;          // Invalid request
+    UNAUTHORIZED = 401;     // Unauthorized access
+    FORBIDDEN = 403;        // Forbidden action
+    NOT_FOUND = 404;        // Resource not found
+    EXISTED = 409;          // Resource conflict
+    ERROR = 500;            // Internal server error
+    MAINTENANCE = 501;      // Maintenance mode
+}
+
+enum VinGameCode {
+    VINGAMECODE_DEFAULT = 0;
+    INVALID_USER_ID = 601;           // Invalid user ID
+    INVALID_ACTION = 602;            // Invalid action
+    INVALID_TRANSACTION_ID = 603;    // Invalid transaction ID
+    INVALID_AMOUNT = 604;            // Invalid amount
+    ERROR_USER_NOT_FOUND = 605;      // User not found
+    ERROR_USER_IS_LOCKED = 606;      // User account is locked
+    ERROR_INSUFFICIENT_AMOUNT = 607; // Insufficient funds
+    INVALID_REFERENCE_ID = 608;      // Invalid reference ID
+    ERROR_REFERENCE_NOT_FOUND = 609; // Reference not found
+    INVALID_OPTION = 610;            // Invalid option
+    INVALID_HASH = 611;              // Invalid hash
+    ERROR_SESSION_EXPIRED = 612;     // Session expired
+}
+
+message WalletRequest {
+    int64 agency_id = 1;       // Agency identifier
+    string username = 2;       // Username
+    int64 user_id = 3;            // User unique identifier
+    double main_balance = 4;   // Main wallet balance
+    int64 time = 5;            // Timestamp
+    string wallet_type = 6;  // comma-separated wallet types
+}
+
+message WalletResponse {
+    double extra_balance = 1;    // Extra balance in the wallet
+    double main_balance = 2;     // Main balance in the wallet
+    string username = 3;         // Username associated with the wallet
+    int32 wallet_type = 4;       // Wallet type identifier
+    int64 time = 5;              // Timestamp
+
+    repeated Wallet wallets = 6; // List of Wallet objects
+    APIStatus status = 7;                 // The status of the transaction
+    int32 error_code = 8;                // The error code
+    string message = 9;                  // A message describing the status or error
+}
+
+message Wallet {
+    int64 user_id = 1;         // User ID
+    int64 time = 2;            // Timestamp
+    double balance = 3;        // Wallet balance
+    int32 type = 4;            // Wallet type identifier
+    int64 member_id = 5;
+}
+
+message WalletMessage {
+    double main_balance = 1;
+    string uid = 2;  
+    int64 time = 3;            
+    int64 member_id = 4;         
+    int32 wallet_type = 5;        
+}
+
+enum EnumCurrency {
+    // Fiat currencies
+    VND = 0; // Vietnam Dong
+    AED = 135; // United Arab Emirates Dirham
+    AFN = 1; // Afghani
+    ALL = 2; // Albania Lek
+    AMD = 3; // Armenia Dram
+    ANG = 4; // Netherlands Antillean guilder
+    AOA = 5; // Angola Kwanza
+    ARS = 6; // Argentina Pesos
+    AWG = 7; // Aruban florin
+    AZN = 8; // Azerbaijan Manat
+    BAM = 9; // Bosnia and Herzegovina Convertible Marka
+    BBD = 10; // Barbados Dollar
+    BDT = 11; // Bangladesh Taka
+    BGN = 12; // Bulgaria Lev
+    BHD = 13; // Bahraini dinar
+    BIF = 14; // Burundi Franc
+    BMD = 15; // Bermuda Dollar
+    BND = 16; // Brunei Dollar
+    BOB = 17; // Bolivia Boliviano
+    BRL = 18; // Brazil Real
+    BSD = 19; // Bahamian dollar
+    BTN = 20; // Bhutan Ngultrum
+    BWP = 21; // Botswana Pula
+    BYN = 22; // Belarusian Ruble
+    BZD = 23; // Belize Dollar
+    CAD = 24; // Canada Dollar
+    CDF = 25; // Congolese franc
+    CHF = 26; // Swiss franc
+    CLP = 27; // Chile Peso
+    CNY = 28; // China Yuan Renminbi
+    COP = 29; // Colombia Pesos
+    CRC = 30; // Costa Rica Colon
+    RSD = 31; // Serbia Dinar
+    CVE = 32; // Cape Verde Escudo
+    CZK = 33; // Czech koruna
+    DJF = 34; // Djiboutian Franc
+    DKK = 35; // Danish krone
+    DOP = 36; // Dominican peso
+    DZD = 37; // Algeria Dinar
+    EGP = 38; // Egypt Pounds
+    ERN = 39; // Eritrea Nakfa
+    ETB = 40; // Ethiopian Birr
+    EUR = 41; // Euro
+    FJD = 42; // Fiji Dollar
+    FKP = 43; // Falkland Island Pound
+    GBP = 44; // Pound sterling
+    GEL = 45; // Georgian lari
+    GHS = 46; // Ghanaian Cedis
+    GIP = 47; // Gibraltar Pound
+    GMD = 48; // Gambia Dalasi
+    GNF = 49; // Guinea Franc
+    GTQ = 50; // Guatemala Quetzal
+    GYD = 51; // Guyana Dollar
+    HKD = 52; // Hong Kong Dollar
+    HNL = 53; // Honduran lempira
+    HRK = 54; // Croatia Kuna
+    HTG = 55; // Haiti Gourde
+    HUF = 56; // Hungary Forint
+    IDR = 57; // Indonesia Rupiah
+    ILS = 58; // Israel New Shekel
+    INR = 59; // India Rupee
+    IQD = 60; // Iraq Dinar
+    ISK = 61; // Icelandic krona
+    JMD = 62; // Jamaica Dollar
+    JOD = 63; // Jordan Dinar
+    JPY = 64; // Japan Yen
+    KES = 65; // Kenya Shilling
+    KGS = 66; // Kyrgyzstan Som
+    KHR = 67; // Cambodia Riel
+    KMF = 68; // Comoros Franc
+    KRW = 69; // South Korea Won
+    KWD = 70; // Kuwait Dinar
+    KYD = 71; // Cayman Islands Dollar
+    LAK = 72; // Laos Kip
+    LBP = 73; // Lebanon Pound
+    LRD = 74; // Liberia Dollar
+    LSL = 75; // Lesotho Loti
+    LYD = 76; // Libya Dinar
+    MAD = 77; // Morocco Dirham
+    MDL = 78; // Moldova Leu
+    MGA = 79; // Malagasy ariary
+    MKD = 80; // Macedonia Denar
+    MMK = 81; // Myanmar Kyat
+    MNT = 82; // Mongolian Tugrik
+    MOP = 83; // Macau Pataca
+    MUR = 84; // Mauritius Rupee
+    MVR = 85; // Maldives Rufiyaa
+    MWK = 86; // Malawi Kwacha
+    MXN = 87; // Mexico Peso
+    MZN = 88; // Mozambican Metical
+    MYR = 89; // Malaysia Ringgit
+    NAD = 90; // Namibian dollar
+    NGN = 91; // Nigeria Naira
+    NIO = 92; // Nicaragua Cordola
+    NOK = 93; // Norwegian krone
+    NPR = 94; // Nepal Rupee
+    NZD = 95; // New Zealand Dollar
+    OMR = 96; // Oman Rial
+    PAB = 97; // Panama Balboa
+    PEN = 98; // Peruvian sol
+    PGK = 99; // Papua New Guinea Kina
+    PHP = 100; // Philippines Peso
+    PKR = 101; // Pakistan Rupee
+    PLN = 102; // Poland Zloty
+    PYG = 103; // Paraguay Guarani
+    QAR = 104; // Qatar Riyal
+    RON = 105; // Romanian Leu
+    RUB = 106; // Russia Ruble
+    RWF = 107; // Rwanda Franc
+    SAR = 108; // Saudi Arabia Riyal
+    SBD = 109; // Solomon Islands Dollar
+    SCR = 110; // Seychelles Rupee
+    SDG = 111; // Sudanese Pound
+    SEK = 112; // Swedish Krona
+    SGD = 113; // Singapore Dollar
+    SHP = 114; // Saint Helena Pound
+    SLL = 115; // Sierra Leone
+    SOS = 116; // Somalia Shilling
+    SRD = 117; // Suriname Dollar
+    SVC = 118; // El Salvador Colón
+    SZL = 119; // Swazi lilangeni
+    THB = 120; // Thailand Baht
+    TJS = 121; // Tajikistan Somoni
+    TMT = 122; // Turkmenistan manat
+    TND = 123; // Tunisia Dinar
+    TOP = 124; // Tonga Pa'anga
+    TRY = 125; // Turkish lira
+    TTD = 126; // Trinidad and Tobago Dollar
+    TWD = 127; // Taiwan New Dollar
+    TZS = 128; // Tanzania Shilling
+    UAH = 129; // Ukrainian hryvnia
+    UGX = 130; // Uganda Shilling
+    USD = 131; // US Dollars
+    UYU = 132; // Uruguay Peso
+    UZS = 133; // Uzbekistan Som
+    VES = 134; // Venezuelan bolívar
+    VUV = 136; // Vanuatu Vatu
+    WST = 137; // Samoa Tala
+    XAG = 138; // Silver Ounce
+    XAF = 139; // CFA Franc BEAC
+    XAU = 140; // Gold Ounce
+    XCD = 141; // East Caribbean Dollar
+    XDR = 142; // IMF SDR
+    XOF = 143; // CFA franc BCEAO
+    XPD = 144; // Palladium Ounce
+    XPF = 145; // CFP franc
+    XPT = 146; // Platinum Ounce
+    YER = 147; // Yemen Rial
+    ZAR = 148; // South Africa Rand
+    ZMW = 149; // Zambia Kwacha
+
+    // Cryptocurrencies
+    USDT = 150; // Tether
+    TET = 151; // Tether alternate
+    XBT = 152; // Bitcoin
+    ETH = 153; // Ethereum
+    BNB = 154; // Binance Coin
+}

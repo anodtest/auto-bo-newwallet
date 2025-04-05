@@ -1,1 +1,1 @@
-# auto-bo-newwallet
+# autotest
