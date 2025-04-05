@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/Seatincorp/auto-bo-be.git', branch: 'main'
+                git url: 'https://github.com/anodtest/auto-bo-newwallet', branch: 'main'
             }
         }
         stage('Setup Environment') {
