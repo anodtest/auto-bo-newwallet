@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/anodtest/auto-bo-newwallet', branch: 'main'
+                git credentialsId: '421c09bc-dfa7-44b0-9d77-f7c7a0ac05d7',
+                    url: 'https://github.com/anodtest/auto-bo-newwallet.git',
+                    branch: 'main'
             }
         }
         stage('Setup Environment') {
