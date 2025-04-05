@@ -1,10 +1,14 @@
 pipeline {
     agent any
+    environment {
+        PYTHON_VERSION = "3.13"
+        PATH = "/Users/user/Library/Python/3.9/bin:$PATH" // Thêm đường dẫn pytest
+    }
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: '421c09bc-dfa7-44b0-9d77-f7c7a0ac05d7',
-                    url: 'https://github.com/anodtest/auto-bo-newwallet.git',
+                git url: 'https://github.com/anodtest/auto-bo-newwallet.git',
+                    credentialsId: '421c09bc-dfa7-44b0-9d77-f7c7a0ac05d7',
                     branch: 'main'
             }
         }
@@ -26,7 +30,8 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts artifacts: '*.txt', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'test_output.txt', allowEmptyArchive: true
+            sh 'echo "Test results archived"'
         }
         success {
             echo 'Tests passed successfully!'
